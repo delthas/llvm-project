@@ -282,6 +282,9 @@ set(CMAKE_C_FLAGS "${_CMAKE_C_FLAGS_INITIAL} ${COMPILE_FLAGS}" CACHE STRING "" F
 set(_CMAKE_CXX_FLAGS_INITIAL "${CMAKE_CXX_FLAGS}" CACHE STRING "")
 set(CMAKE_CXX_FLAGS "${_CMAKE_CXX_FLAGS_INITIAL} ${COMPILE_FLAGS}" CACHE STRING "" FORCE)
 
+set(_CMAKE_RC_FLAGS_INITIAL "${CMAKE_RC_FLAGS}" CACHE STRING "")
+set(CMAKE_RC_FLAGS "${_CMAKE_RC_FLAGS_INITIAL} ${COMPILE_FLAGS}" CACHE STRING "" FORCE)
+
 set(LINK_FLAGS
     # Prevent CMake from attempting to invoke mt.exe. It only recognizes the slashed form and not the dashed form.
     /manifest:no
